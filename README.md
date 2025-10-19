@@ -1,4 +1,5 @@
-[![DOI](https://zenodo.org/badge/1024057265.svg)](https://doi.org/10.5281/zenodo.16415664)
+<!-- [![DOI](https://zenodo.org/badge/1024057265.svg)](https://doi.org/10.5281/zenodo.16415664)-->
+[![DOI](https://zenodo.org/badge/1024057265.svg)](https://zenodo.org/badge/latestdoi/1024057265)
 # MultiTaskDeltaNet (MTDN)
 Change Detection-based Image Segmentation for operando ETEM with Application to Carbon Gasification Kinetics
 ## Network
@@ -111,3 +112,26 @@ Each model folder (no_init, init1, init2 and U-net) contains results for both th
 
 3. **Images for README:**
  - The image_github/ folder includes curated visualizations used in this README.md file.
+
+## Citation
+If you use **MultiTaskDeltaNet** in your research, please cite:
+
+**APA:**
+> Niu, Y., Li, T., Zhu, Y., & Yang, Q. (2025). *MultiTaskDeltaNet: Change Detection-based Image Segmentation for Operando ETEM with Application to Carbon Gasification Kinetics* (Version 1.0.0) [Computer software]. Zenodo. [https://doi.org/10.5281/zenodo.16415665](https://doi.org/10.5281/zenodo.16415665)
+
+**BibTeX:**
+```bibtex
+bibtex@software{niu2025multitaskdeltanet,
+  author       = {Niu, Yushuo and Li, Tianyu and Zhu, Yuanyuan and Yang, Qian},
+  title        = {MultiTaskDeltaNet: Change Detection-based Image Segmentation for Operando ETEM with Application to Carbon Gasification Kinetics},
+  month        = {October},
+  year         = {2025},
+  publisher    = {Zenodo},
+  version      = {1.0.0},
+  doi          = {10.5281/zenodo.16415665},
+  url          = {https://doi.org/10.5281/zenodo.16415665}
+}
+```
+
+## License
+This project is licensed under the terms of the [MIT License](LICENSE).

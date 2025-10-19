@@ -135,3 +135,7 @@ bibtex@software{niu2025multitaskdeltanet,
 
 ## License
 This project is licensed under the terms of the [MIT License](LICENSE).
+
+**Yushuo Niu**  
+Ph.D. Candidate, University of Connecticut  
+yushuo.niu@uconn.edu

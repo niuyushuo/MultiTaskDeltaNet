@@ -25,8 +25,7 @@ def load_dataset_s():
     path='/home/yun13001/dataset/Carbon/tianyu_new_data/New_distribution/'
 
     dirnames = os.listdir(path)
-    dirnames=sorted(dirnames, key=lambda s: float(re.findall(r'\d+', s)[0]))
-    #print(dirnames)
+    #dirnames=sorted(dirnames, key=lambda s: float(re.findall(r'\d+', s)[0]))
 
     file_names={}
     for dirname in dirnames:
@@ -167,7 +166,6 @@ def load_dataset_s():
     val_map1 = np.array(val_map1)
     val_map2 = np.array(val_map2)
 
-    #print(val_ref.shape)
     val_dataset1 = CARDataset(val_ref,val_res,val_label1,val_label2,img_size=256,is_train=False,to_tensor=True)
 
 

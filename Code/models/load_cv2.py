@@ -27,8 +27,7 @@ def load_dataset():
     path='/home/yun13001/dataset/Carbon/tianyu_new_data/New_distribution/'
 
     dirnames = os.listdir(path)
-    dirnames=sorted(dirnames, key=lambda s: float(re.findall(r'\d+', s)[0]))
-    print(dirnames)
+    #dirnames=sorted(dirnames, key=lambda s: float(re.findall(r'\d+', s)[0]))
 
     file_names={}
     for dirname in dirnames:
@@ -89,11 +88,6 @@ def load_dataset():
         ref = normalize(ref)
         label1=normalize(label1)
         label2=normalize(label2)
-
-        print('ref',ref.shape)
-        print('label1',label1.shape)
-        print('label2',label2.shape)
-
 
         for m in range(len(ref)):
 
@@ -158,7 +152,6 @@ def load_dataset():
                 train_map2.append(mask)
                 ######  ######
 
-    print('train test!')
     train_ref = np.array(train_ref)
     train_res = np.array(train_res)
 
@@ -170,7 +163,6 @@ def load_dataset():
     train_map1 = np.array(train_map1)
     train_map2 = np.array(train_map2)
 
-    print(train_ref.shape)
 
     #### validation1:
     ##### Validation dataset1:
@@ -281,7 +273,6 @@ def load_dataset():
                 val_map2.append(mask)
                 ######  ######
 
-    print('validation test1!')
     val_ref = np.array(val_ref)
     val_res = np.array(val_res)
 
@@ -293,7 +284,6 @@ def load_dataset():
     val_map1 = np.array(val_map1)
     val_map2 = np.array(val_map2)
 
-    print(val_ref.shape)
     val_dataset1 = CARDataset(val_ref,val_res,val_label1,val_label2,img_size=256,is_train=False,to_tensor=True)
 
     #### validation2:
@@ -405,7 +395,6 @@ def load_dataset():
                 val_map2.append(mask)
                 ######  ######
 
-    print('validation test2!')
     val_ref = np.array(val_ref)
     val_res = np.array(val_res)
 
@@ -417,7 +406,6 @@ def load_dataset():
     val_map1 = np.array(val_map1)
     val_map2 = np.array(val_map2)
 
-    print(val_ref.shape)
     val_dataset2 = CARDataset(val_ref,val_res,val_label1,val_label2,img_size=256,is_train=False,to_tensor=True)
 
     #### test:
@@ -529,8 +517,6 @@ def load_dataset():
                 test_map2.append(mask)
                 ######  ######
 
-
-    print('testing test!')
     test_ref = np.array(test_ref)
     test_res = np.array(test_res)
 
@@ -541,7 +527,6 @@ def load_dataset():
     test_label2 = np.array(test_label2)
     test_map1 = np.array(test_map1)
     test_map2 = np.array(test_map2)
-    print(test_ref.shape)
 
     ##### only for cv
     train_dataset = CARDataset(train_ref,train_res,train_label1,train_label2,img_size=256,is_train=True,to_tensor=True)

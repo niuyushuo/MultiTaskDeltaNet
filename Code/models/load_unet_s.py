@@ -20,8 +20,7 @@ def load_dataset_s():
     path='/home/yun13001/dataset/Carbon/tianyu_new_data/New_distribution/'
 
     dirnames = os.listdir(path)
-    dirnames=sorted(dirnames, key=lambda s: float(re.findall(r'\d+', s)[0]))
-    print(dirnames)
+    #dirnames=sorted(dirnames, key=lambda s: float(re.findall(r'\d+', s)[0]))
 
     ###### Folder names and its corresponding image files
     file_names={}
@@ -73,9 +72,7 @@ def load_dataset_s():
     val_label1 = normalize(val_label1)
     val_label2 = normalize(val_label2)
 
-    print('val_test1:',val_ref.shape)
     val_dataset1 = UNETDataset(val_ref,val_label1,val_label2,img_size=256,is_train=False,to_tensor=True)
-
 
     #### validation2:
     ##### Validation dataset:
@@ -107,7 +104,6 @@ def load_dataset_s():
     val_label1 = normalize(val_label1)
     val_label2 = normalize(val_label2)
 
-    print('val_test2:',val_ref.shape)
     val_dataset2 = UNETDataset(val_ref,val_label1,val_label2,img_size=256,is_train=False,to_tensor=True)
 
 
@@ -143,7 +139,6 @@ def load_dataset_s():
     test_label1 = normalize(test_label1)
     test_label2 = normalize(test_label2)
 
-    print('test_test1:',test_ref.shape)
     test_dataset1 = UNETDataset(test_ref,test_label1,test_label2,img_size=256,is_train=False,to_tensor=True)
 
 
@@ -179,7 +174,6 @@ def load_dataset_s():
     test_label1 = normalize(test_label1)
     test_label2 = normalize(test_label2)
 
-    print('test_test2:',test_ref.shape)
     test_dataset2 = UNETDataset(test_ref,test_label1,test_label2,img_size=256,is_train=False,to_tensor=True)
 
     return val_dataset1, val_dataset2, test_dataset1, test_dataset2

@@ -117,19 +117,16 @@ Each model folder (no_init, init1, init2 and U-net) contains results for both th
 If you use **MultiTaskDeltaNet** in your research, please cite:
 
 **APA:**
-> Niu, Y., Li, T., Zhu, Y., & Yang, Q. (2025). *MultiTaskDeltaNet: Change Detection-based Image Segmentation for Operando ETEM with Application to Carbon Gasification Kinetics* (Version 1.0.0) [Computer software]. Zenodo. [https://doi.org/10.5281/zenodo.16415665](https://doi.org/10.5281/zenodo.16415665)
+> Niu, Y., Li, T., Zhu, Y., & Yang, Q. (2025). *MultiTaskDeltaNet: Change Detection-based Image Segmentation for operando ETEM with Application to Carbon Gasification Kinetics*. Digital Discovery. [https://doi.org/10.1039/D5DD00333D](https://doi.org/10.1039/D5DD00333D)
 
 **BibTeX:**
 ```bibtex
-bibtex@software{niu2025multitaskdeltanet,
-  author       = {Niu, Yushuo and Li, Tianyu and Zhu, Yuanyuan and Yang, Qian},
-  title        = {MultiTaskDeltaNet: Change Detection-based Image Segmentation for Operando ETEM with Application to Carbon Gasification Kinetics},
-  month        = {October},
-  year         = {2025},
-  publisher    = {Zenodo},
-  version      = {1.0.0},
-  doi          = {10.5281/zenodo.16415665},
-  url          = {https://doi.org/10.5281/zenodo.16415665}
+@article{niu2025multitaskdeltanet,
+  title      = {MultiTaskDeltaNet: Change Detection-based Image Segmentation for operando ETEM with Application to Carbon Gasification Kinetics},
+  author     = {Niu, Yushuo and Li, Tianyu and Zhu, Yuanyuan and Yang, Qian},
+  journal    = {Digital Discovery},
+  year       = {2025},
+  publisher  = {Royal Society of Chemistry}
 }
 ```
 
